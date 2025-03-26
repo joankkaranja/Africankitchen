@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:url(oil.webp);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+p{
+    background-color: white;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li.active a{
+    background-color: white;
+    color: black;
+}
+.title{
+    position: absolute;
+    top:35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color: white;
+    font-size: 70px;
+    letter-spacing: 2px;
+}
+.button{
+    position: absolute;
+    top:43%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border:1px solid white;
+    padding: 5px 20px;
+    color: white;
+    transition: o.5 ease;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 3px;
+
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.submenu{
+    display: none;
+    top:6%;
+    position: relative;
+}
+.submenu ul{
+    position: absolute;
+}
+.submenu ul li a{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.navbar ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 13px;
+    margin-left: -8px;
+}
+.navbar ul li:hover .submenu ul{
+    display: block;
+    margin: 6px;
+}
+.navbar ul li:hover .submenu ul li{
+    width:75px;
+    padding:5px;
+    border-bottom: 1px white;
+    background: transparent;
+    transition: 0.4ease;
+    text-align: left;
+    border-radius: 2px;
+}
+.country{
+    display: none;
+    top:6%;
+    position: relative;
+}
+.country ul{
+    position: absolute;
+}
+.navbar ul li:hover .country{
+    display: block;
+    position: absolute;
+    background-color: black;
+    margin-top: 13px;
+    margin-left: -8px;
+}
+.navbar ul li:hover .country ul{
+    display: block;
+    margin: 6px;
+}
+.navbar ul li:hover .country ul li{
+    width:75px;
+    padding:5px;
+    border-bottom: 1px white;
+    background: transparent;
+    transition: 0.4ease;
+    text-align: left;
+    border-radius: 2px;
+}
